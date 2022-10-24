@@ -26,9 +26,9 @@ function NoPageFound(props) {
             {
                 users.id 
                 ?
-                <button className='btn' onClick={Lost}>Home</button>
+                <button className='bttn' onClick={Lost}>Home</button>
                 :
-                <button className='btn' onClick={login}>Log IN</button>
+                <button className='bttn' onClick={login}>Log IN</button>
 
             }
             </div>
