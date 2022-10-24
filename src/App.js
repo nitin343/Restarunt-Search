@@ -40,7 +40,7 @@ function App() {
 
         )}
         
-        <Route path="*" element={<NoPageFound />} />
+        <Route path="*" element={users.id ? <NoPageFound /> : <Navigate to='/signup' />} />
        
         {/* <Route path='/bookmark' element={<Bookmark />} /> */}
      </Routes>
