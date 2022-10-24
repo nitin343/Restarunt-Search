@@ -53,7 +53,7 @@ export const Bookmark = () => {
                 
                 : 
                 
-                <span> no Bookmark</span>
+                <span className="no_bookmark"> No Bookmark Selected</span>
                 
               
             }

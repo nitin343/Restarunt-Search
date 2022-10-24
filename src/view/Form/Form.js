@@ -51,7 +51,7 @@ export default function SignInForm() {
                     <input type="password" {...register("password" , { required : true})} placeholder='password' />
                     {errors.password?.type === "required" && "Password is required"}
                     {errors.username?.type === "required" && "username is required"}
-                    {loginData.id && navigate('/search') }
+                    {loginData.id && navigate('/') }
                     {loginError ?  <span>Username and password not matching</span> : <span></span>}
                     <button className='btn'>Log In</button>
                 </form>

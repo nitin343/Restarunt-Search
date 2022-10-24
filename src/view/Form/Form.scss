@@ -29,7 +29,7 @@
 
 #form >  input, .btn{
   border: 1px solid #e9ecef;
-  padding: .9em 1em;
+  padding: .9em 1em  !important;
 }
 
 #form > input:focus{
@@ -39,7 +39,7 @@
 #form > .btn{
   background-color: #003049;
   color: #e9ecef;
-  font-size: 1em;
+  font-size: 1em !important;
   cursor: pointer;
 }
 

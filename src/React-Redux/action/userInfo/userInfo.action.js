@@ -4,7 +4,7 @@ export const UserInfo = (user) => (dispatch, getState) => {
 
 
       // commeted Local Storage Use
-    // localStorage.setItem( 'userId' , JSON.stringify({user}))
+    localStorage.setItem( 'userId' , JSON.stringify({user}))
 
     dispatch({
         type: "ADD_USER",
@@ -14,6 +14,10 @@ export const UserInfo = (user) => (dispatch, getState) => {
 
 export const DeleteUserInfo = (user) => (dispatch, getState) => {
     const {User: {users} , } =getState();
+
+    localStorage.removeItem( 'userId');
+
+
         dispatch({
             type: "REMOVE_USER",
         })

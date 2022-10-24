@@ -18,13 +18,13 @@ export const HomePage = () => {
     const UserInfo = useSelector((state) => state.User)
     const {users} = UserInfo 
 
-    // const userInfoLocal = JSON.parse(localStorage.getItem('userId'))
-    // const {user } = userInfoLocal;
+    const userInfoLocal = JSON.parse(localStorage.getItem('userId'))
+    const {user } = userInfoLocal;
 
    const removeUser = () => {
-        dispatch(DeleteUserInfo(users));
-        dispatch(DeleteUserBookmark(users))
-        dispatch(DeleteUserSearch(users))
+        dispatch(DeleteUserInfo(user));
+        dispatch(DeleteUserBookmark(user))
+        dispatch(DeleteUserSearch(user))
         navigate('/signup')
         // localStorage.removeItem('userId')
     }
