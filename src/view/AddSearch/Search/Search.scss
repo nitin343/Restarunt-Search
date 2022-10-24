@@ -20,13 +20,33 @@
 
 
 .AddCard{
+    border-top: 0.22px solid #e1d7d7;
     display: grid;
     grid-template-columns: 1fr 1fr ;
     justify-content: center;
     margin: 10px 0;
 }
 
+.no_data{
+    // border: 1px solid red;
+    border-top: 0.22px solid #e1d7d7;
+
+    height: 80vh;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: #e5d8d8;
+    /* width: 100vh; */
+    align-items: center;
+    font-weight: 600;
+}
+
 @media only screen and (min-width: 280px) and (max-width: 700px){
+
+    .no_data{
+        height: 50vh;
+    }
+
     .SearchBar{
 
         display: flex;

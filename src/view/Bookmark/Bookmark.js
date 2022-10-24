@@ -39,15 +39,16 @@ export const Bookmark = () => {
             console.log(bookmarks);
 
     return (
-        <div className='AddCard'>
-
-            {
-                
-                (bookmarks.length !== 0 && bookmarks[0] !== []  && bookmarks !== undefined)? 
-                
-                    bookmarks.map((data) => {
-                        return(
+        <>
+                {
+            
+            (bookmarks.length !== 0 && bookmarks[0] !== []  && bookmarks !== undefined)? 
+            
+            bookmarks.map((data) => {
+                return(
+                            <div className='AddCard'>
                             <MediaCard className='searchedCard' data={data}/>
+                            </div>
                         )
                     })
                 
@@ -57,8 +58,7 @@ export const Bookmark = () => {
                 
               
             }
-       
+       </>
            
-        </div>
     )
 }

@@ -90,9 +90,16 @@ export function SearchBar() {
         />
         <Button className='buton' onClick={() => AddCards(searchedRestaurnt)} variant="contained">Add</Button>
         </div>
+            { searchs.length !== 0 ?
+            
         <div className='AddCard'>
-        <AddCard />
+            <AddCard /> 
         </div>
+            
+            : 
+            <div className='no_data'><span className='no_data_text'>Add Restaurnt</span></div>
+             }
+        
     </main>
     );
 }

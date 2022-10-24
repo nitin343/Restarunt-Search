@@ -52,7 +52,7 @@ export default function FullScreenDialog(props) {
           </Toolbar>
         </AppBar>
     <DialogContent>
-        <iframe className='fullScreen_dstudeio' style={{width: '100%' , height:'80vh'}} src={props.src} frameborder="0"  allowfullscreen></iframe>
+        <iframe  style={{ height:'600px' , width:'750px'}}  src={props.src} frameborder="0"  allowfullscreen></iframe>
     </DialogContent>
       </Dialog>
     </div>
