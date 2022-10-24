@@ -1,0 +1,81 @@
+.card_cardContent{
+    display: flex;
+    justify-content: space-between;
+
+    .card_text{
+        width: 50%;
+        // border: 1px solid red;
+        font-size: 20px ;
+        font-weight: 600;
+    }
+
+    .card_icon{
+        width: 50%;
+        font-size: 15px;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: end;
+
+        span{
+            margin: 0 15px;
+        }
+    }
+}
+
+.card_width{
+    width: 99%;
+}
+
+.dstudio{
+    width: 500px !important;
+    height: 400px !important;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 700px){
+
+    .searchedCard{
+        // border: 2px solid yellow;
+        margin: 10px 0px;
+    }
+
+    .searchedCard{
+        // border: 2px solid blue;
+        width: 98%;
+        height: 45vh;
+        margin: 10px 5px !important;
+    }
+
+    .card_width{
+        height: 45vh;
+    }
+
+    .dstudio{
+        width: 100% !important;
+    }
+    .card_cardContent{
+        display: flex;
+        justify-content: space-between;
+        // border: 2px solid red;
+    
+        .card_text{
+            width: 50%;
+            // border: 1px solid red;
+            font-size: 20px ;
+            font-weight: 600;
+        }
+    
+        .card_icon{
+            width: 50%;
+            font-size: 15px;
+            // border: 1px solid blue;
+            display: flex;
+            justify-content: end;
+    
+           
+        }
+    }
+}

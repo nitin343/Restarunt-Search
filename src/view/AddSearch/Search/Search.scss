@@ -1,0 +1,56 @@
+
+
+.SearchBar{
+    // border: 10px solid red;
+    // width: 70vh;
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+
+    .autocomplete{
+        // border: 2px solid red;
+        width: 50%;
+    }
+
+    Button{
+     width: 120px;   
+     margin: 0 10px;
+    }
+}
+
+
+.AddCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 700px){
+    .SearchBar{
+
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        justify-content: center;
+        align-items: center;
+    
+        .autocomplete{
+            width: 95%;
+        }
+    
+        .buton{
+         width: 120px;   
+         margin: 10px 0px;
+        }
+    }
+
+    .AddCard{
+        display: grid;
+        grid-template-columns: 1fr ;
+        // place-self: center;
+        // justify-content: center;
+        // align-items: center;
+        margin: 10px 0;
+    }
+}
