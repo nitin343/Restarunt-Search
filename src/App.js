@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ProtectedRoutes from './ProtectedRoutes';
 import { SearchBar } from './view/AddSearch/Search/search';
+import MultiSelect from './view/autocomplete/AutoComplete';
 import { Bookmark } from './view/Bookmark/Bookmark';
 import SignInForm from './view/Form/Form';
 import { HomePage } from './view/Home/Home';
@@ -24,7 +25,10 @@ function App() {
     <div>
       <Routes>
         {!users.id && (
+          <>
         <Route path='signup' element={<SignInForm />} />
+        <Route path='select' element={<MultiSelect />} />
+        </>
         )}
 
         {users.id && (
@@ -34,6 +38,7 @@ function App() {
               <Route index element={<SearchBar />} />
               <Route path='search' element={<SearchBar />} />
               <Route path='bookmark' element={<Bookmark />} />
+              <Route path='select' element={<MultiSelect />} />
             </Route>
             {/* <Route path="*" element={<NoPageFound />} /> */}
           </>
